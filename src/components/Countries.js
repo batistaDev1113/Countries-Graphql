@@ -18,8 +18,6 @@ const Countries = ({ countries }) => {
     setCountry(e.target.value);
   };
 
-  console.log(country);
-
   return (
     <Grid container spacing={2} sx={{ flexGrow: 1 }} justifyContent="center">
       <Grid item>

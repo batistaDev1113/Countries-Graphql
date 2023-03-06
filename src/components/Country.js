@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 
 const Country = ({ country }) => {
@@ -29,7 +30,7 @@ const Country = ({ country }) => {
             alignItems="flex-start"
             style={{ display: "flex", justifyContent: "space-evenly" }}
           >
-            <listItemText>
+            <ListItemText>
               <Typography textAlign="center">
                 <label>
                   <strong>Country:</strong>
@@ -37,8 +38,8 @@ const Country = ({ country }) => {
                 <br />
                 {name}
               </Typography>
-            </listItemText>
-            <listItemText>
+            </ListItemText>
+            <ListItemText>
               <Typography textAlign="center">
                 <label>
                   <strong>Capital:</strong>
@@ -46,14 +47,14 @@ const Country = ({ country }) => {
                 <br />
                 {capital}
               </Typography>
-            </listItemText>
+            </ListItemText>
           </ListItem>
           <Divider />
           <ListItem
             alignItems="flex-start"
             style={{ display: "flex", justifyContent: "space-evenly" }}
           >
-            <listItemText>
+            <ListItemText>
               <Typography textAlign="center">
                 <label>
                   <strong>Continent:</strong>
@@ -61,8 +62,8 @@ const Country = ({ country }) => {
                 <br />
                 {continent.name}
               </Typography>
-            </listItemText>
-            <listItemText>
+            </ListItemText>
+            <ListItemText>
               <Typography textAlign="center">
                 <label>
                   <strong>Currency:</strong>
@@ -70,7 +71,7 @@ const Country = ({ country }) => {
                 <br />
                 {currency}
               </Typography>
-            </listItemText>
+            </ListItemText>
           </ListItem>
         </List>
       </CardContent>
