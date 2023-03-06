@@ -21,11 +21,21 @@ const Countries = ({ countries }) => {
   console.log(country);
 
   return (
-    <Grid container spacing={1}>
-      <Grid item xs={4}>
+    <Grid container spacing={2} sx={{ flexGrow: 1 }} justifyContent="center">
+      <Grid item>
         <FormControl>
           <InputLabel id="demo-countries-graphql">Countries</InputLabel>
           <Select
+            slotProps={{
+              listbox: {
+                sx: {
+                  "--List-decorator-size": "48px"
+                }
+              }
+            }}
+            sx={{
+              minWidth: 240
+            }}
             aria-label="select from a country list"
             labelId="demo-countries-graphql"
             id="demo-countries"
@@ -42,9 +52,7 @@ const Countries = ({ countries }) => {
           </Select>
         </FormControl>
       </Grid>
-      <Grid item xs={8}>
-        {countryToPass && <Country country={countryToPass} />}
-      </Grid>
+      <Grid item>{countryToPass && <Country country={countryToPass} />}</Grid>
     </Grid>
   );
 };
