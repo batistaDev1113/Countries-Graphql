@@ -10,6 +10,10 @@ const GET_COUNTRIES = gql`
       name
       capital
       emoji
+      currency
+      continent {
+        name
+      }
     }
   }
 `;
